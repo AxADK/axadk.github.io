@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(37, 176, 180);
+
+
+}
+
+.resposta{
+    margin: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.errada{/*Vermelho e Amarelo */
+        background-color:yellow;
+        border:2px dotted orange;
+        outline:2px dashed red;
+        color: red;
+    }
+
+    .correta{/*Azul e Verde*/
+        background-color: lightgreen;
+        border:2px dotted green;
+        outline:2px dashed darkgreen;
+        color: blue;
+    }
