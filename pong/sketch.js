@@ -32,7 +32,7 @@ let movimentoBaixo = 10;
 let pontosI = 0;
 let pontosM = 0;
 //movimento bolinha
-let velocidadeBolinha();
+let velocidadeBolinha = 8;
 
 function preload(){
   somPonto = loadSound("ponto.mp3");
