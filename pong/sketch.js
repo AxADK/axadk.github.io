@@ -31,6 +31,8 @@ let movimentoBaixo = 10;
 //Pontos
 let pontosI = 0;
 let pontosM = 0;
+//movimento bolinha
+let velocidadeBolinha();
 
 function preload(){
   somPonto = loadSound("ponto.mp3");
@@ -176,20 +178,20 @@ function movimentoMinhaRaquete(){
       if (keyIsDown(UP_ARROW)) {
         //teto
         if(MraqueteY > 0)
-    MraqueteY += movimentoCima;
+    MraqueteY += velocidadeBolinha;
   }
     if (keyIsDown(DOWN_ARROW)) {
       //chão
       if(MraqueteY < (alturaTela - alturaR))
-      MraqueteY += movimentoBaixo;
+      MraqueteY += velocidadeBolinha;
   }
     if (keyIsDown(LEFT_ARROW)) {
       if(MraqueteX > metadeTela)
-      MraqueteX += movimentoCima;
+      MraqueteX += velocidadeBolinha;
   }
     if (keyIsDown(RIGHT_ARROW)) {
       if(MraqueteX < (larguraTela - larguraR))
-      MraqueteX += movimentoBaixo;
+      MraqueteX += velocidadeBolinha;
   }
 }
 
@@ -198,19 +200,19 @@ function movimentoRaqueteOponente(){
   //console.log("x: " + IraqueteX);
       if (keyIsDown(87)) {
       if(IraqueteY > 0)
-      IraqueteY += movimentoCima;
+      IraqueteY += velocidadeBolinha;
   }
     if (keyIsDown(83)) {
       if(IraqueteY < (alturaTela - alturaR))
-      IraqueteY += movimentoBaixo;
+      IraqueteY += velocidadeBolinha;
   }
     if (keyIsDown(65)) {
       if(IraqueteX > 0)
-      IraqueteX += movimentoCima;
+      IraqueteX += velocidadeBolinha;
   }
       if (keyIsDown(68)) {
         if(IraqueteX < metadeTela - larguraR)
-      IraqueteX += movimentoBaixo;
+      IraqueteX += velocidadeBolinha;
   }
 }
 
