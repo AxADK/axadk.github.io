@@ -65,10 +65,10 @@ function draw() {
 
 function telaInicial(){
 
-  fill("DodgerBlue");
+  fill("lime");
   rect(larguraTela/4, 0, metadeTela, alturaTela);
   textAlign(CENTER);
-  fill("lime")
+  fill("Purple")
   textSize(20);
   text("Ping Pong do Programador", metadeTela, alturaTela/2);
 
@@ -101,7 +101,7 @@ function jogar(){
   }
 
 }
-};
+}
 
 function setasVenceu(){
   fill("purple")
@@ -124,8 +124,8 @@ function teclasVenceu(){
 }
 
 function mostraPlacar(){
-  fill("white")
-  stroke("black")
+  fill("pink")
+  stroke("blue")
   textSize(30);
   text(meuPlacar, 3/4 * larguraTela, 30);
   text(placarOponente, larguraTela/4, 30);
@@ -146,7 +146,7 @@ function mostraPlacar(){
     velocidadeY += aumentoDeVelocidade;
   }
 
-};
+}
 
 function detectaColisaoBolinhaRaquetes(){
 //Colisao minha raquete
